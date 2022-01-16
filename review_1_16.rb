@@ -83,3 +83,10 @@
   # レシーバの要素に対して引数で指定した処理を行う。
   p [1, 2, 3].inject(:+)
 
+# splitメソッド
+  # 引数の正規表現にマッチしたもので文字列を分解する
+  p "Spring,Summer,Autumn,Winter".split(/,/)
+
+  # また、（）があると、マッチしたものを含んだ結果を返す
+  p "Spring,Summer,Autumn,Winter".split(/(,)/)
+
