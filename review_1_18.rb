@@ -49,4 +49,28 @@
   # レシーバに秒単位で加算される。
   puts Time.now + 3600
 
-  p [1,2,3,4].map do |e| e * e end
+# マジックコメント
+  # ソースファイルの文字コードを指定するためのもの。デフォルトでUTH-8が入ってるため、文字コードを指定する必要はない。
+  # 大文字、小文字の区別はない
+  # 正規表現にマッチする書き方 => /coding[:=]\s*[\w.-]+/
+  # --------↓マジックコメントの書き方---------
+    # encoding: ecu-jp
+    # coding: ecu-jp
+    # -*- coding: ecu-jp -*-
+    # vim:set fileencoding=ecu-jp
+
+
+# 例外クラスの継承関係
+  # 全ての例外クラスはExceptionクラスを継承している。ExceptionクラスにはStandardErrorクラスとそれ以外の例外クラスがある。
+  # StandardError => RuntimeError, NameError, TyepeError, ArgumentError, その他の例外クラス
+
+  # resuce節に何もクラスを指定しなかった場合は、StandardErrorとそのサブクラスが補足される。
+  
+
+# オーバーライドできない演算子
+  # = ?: .. ... not && and || or :: +=
+
+
+# 特異メソッド
+  # "オブジェクト.メソッド名"の形で特定のオブジェクトの紐づいているもの。
+  # 特異メソッドはクラスを拡張して定義したメソッドよりも優先度が高い。
