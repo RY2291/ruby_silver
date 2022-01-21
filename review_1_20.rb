@@ -31,3 +31,20 @@
   str = "aaabbcccddd"
   p str.scan("c")
 
+# step(limit, step)メソッド
+  # レシーバからstepずつ加算し、limitまでをブロックに渡す。
+  def hoge
+    x = 0
+    1.step(5,1) do |i|
+      x += 1
+    end
+    puts x
+  end
+  hoge
+
+# Date#to_s
+  # 2015-01-05形式で日付を出力します => %F
+
+
+# 例外処理
+  # 引数は省略可能で例外クラスの指定を省略した場合はRuntimeErrorが発生します。
