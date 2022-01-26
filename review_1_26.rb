@@ -26,4 +26,14 @@
 # to_sメソッド
   # 2022-01-26の形式で表される。（"%Y-%m-%d") == %F
 
+# Mathモジュール
+  # 定数PIにMathモジュールに定義されている。使用する際は、includeするか、Math::PIと記述する。
 
+# オーバーライドできない演算子
+  # = ?: .. ... not && and || or ::
+
+# io.seek(offset, whence = IO::SEEK_SET)
+  # ファイルポインタをwhenceの位置からoffsetだけ移動させる。offset 位置への移動が成功すれば 0 を返します。
+  # IO::SEEK_SET: ファイルの先頭から (デフォルト)
+  # IO::SEEK_CUR: 現在のファイルポインタから
+  # IO::SEEK_END: ファイルの末尾から
