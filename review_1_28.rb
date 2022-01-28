@@ -8,3 +8,6 @@
   p File.dirname("text.txt")
   p File.dirname("Silver/text.txt")
 
+# to_iメソッド
+  # 整数と見なされない文字があれば、その１つ前の文字までを変換対象にする。
+  p "123abc".to_i
