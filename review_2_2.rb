@@ -30,4 +30,14 @@
 
 # 正規表現の[]と^
   # []は文字クラス。[]の中で^を入れると文字クラスに列挙した文字以外にマッチする。
-  p /[^P|p]rogramming/ =~　“Arogramming”
+  p /[^P|p]rogramming/ =~ ("Arogramming")
+
+# 正規表現　iオプション
+  # 大文字と小文字の区別を無くす
+  /^[hc].*o$/i =~ "Hello"
+  p $&
+
+# String#slice(非破壊)
+  # 指定した範囲 (String#[] 参照) を文字列から取り除いたうえで取り除いた部分文字列を返す。
+  string = "test code"
+  p string.slice(0,4)
