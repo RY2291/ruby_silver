@@ -16,3 +16,19 @@
 
   str = "1;2:3;4"
 p str.split(";|:")
+
+
+a=["松","竹","梅"]
+b=["松","たか","子"]
+
+
+[a,b].transpose.each do |x,y|#選択肢3
+  p [x,y]
+end
+
+p /^[Rr]uby$/ =~ "ruby" && "Ruby"
+p /^Ruby|ruby$/ =~ "ruby" && "Ruby"
+
+str = "abcdefgh"
+p str[-4...7]
+
