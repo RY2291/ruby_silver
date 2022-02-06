@@ -23,6 +23,22 @@
 
 # timesメソッド
   # レシーバの回だけ繰り返す。プロックパラメータには0からレシーバから−１までの数値が渡されます。
-  5.times {|n| print n }
+  5.times {|n| p n }
 
-  10.times{|d| print d == 3..d == 5 ? "T" : "F" }
+  
+
+# Hashの初期化
+  # {}かHash.newで行う。
+
+# 空のHashオブジェクトの生成
+  # Hash({}), [], Hash.newのいずれかで行う。
+
+# storeメソッド
+  # hashにkeyとvalueを追加するもしくはvalueを変更する際に使用するhashのメソッドの１つ。
+  h = {}
+  h.store(:key, "value")
+  p h
+
+  m = {"a" => 20}
+  m.store("a", 30)
+  p m
